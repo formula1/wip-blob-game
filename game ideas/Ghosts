@@ -1,0 +1,43 @@
+Shadows, Spirits, ghosts
+These will probably be the main method of combat to make sure that I don't get involved with any rediculousness
+in terms of collisions. I want to avoid frustrating collisions at all costs
+
+For this reason, I believe most of the combat should be done by Ghosts
+In this way the only combat that is done is between Dynamic bodies and thus reduces the possibility
+of having bad collisions
+
+Shadow
+-Shadows Follow you but are delayed by a little bit
+-This forces a player to think 30 seconds ahead
+
+Avatar
+-Avatars stop your current actions as a blob and you move as the ghost itself,
+-If you stop using the avatar, it falls asleep but remains in the last position you left it
+
+Whisperer
+-Whisperer appear on you sholders but are not active
+-Whenever you use them for an action, they remain in the spot that you did it for the full motion
+-After its done, it tries to go back to you
+-You must balance being close to the whisperer with the ability to hit and run
+
+Guardian
+-Moves With you
+-Is always there, whether its in front, behind, below or inside, it will always be there
+-This is the most basic
+
+
+Stalker
+-Moves to and Attacks Closest Opponent
+
+
+Ideas
+-Pokemon-Your attack calls it over so that it may get stronger
+--Cute-First needs love, follows you
+--Defender-Then attacks closest opponent but if you move to far runs to you
+--Loyal-Attacks closest opponent until you call it
+--Bezerker-Then attacks closest opponent, your calls only make it stronger
+	The idea here is that at first the ghost needs you, at the end, you need the ghost
+
+
+-
+

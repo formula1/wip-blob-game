@@ -1,0 +1,51 @@
+The Blob
+
+Why a blob?
+-Ledge Hanging
+-Soft Impacts allow effective punch combat
+
+Other Things
+-Sonic Spinball-Getting smaller and also increases speed, but no control without getting out of spinball
+-Kirby Multi Jump-Inflation gives you a bigger hitbox but also allows you to stay in air
+-Yoshi Grabs-put into mouth, spit out in a certian direction
+	-When on ground-Turns into a submission
+-Dhalsim punches
+
+Why box2d
+-Combat can be modularized
+	-Midair, similar to on ground
+	-Important for making characters quickly, less time spent on animations, more time spent on gameplay
+-Velocity is the important part
+	-As velocity increases, damage increases
+		-This makes keepaway tactics much more about small taps
+		-This makes rushdown much stronger
+
+
+
+Some things to Consider
+-Kicks-Apply force to both the other body and your own
+-Punches-Applys forces only to other body
+
+To make a kick work properly, i would need a prismatic joint
+-however prismatic joints won't work properly by themselves since their joints are locked
+-Adding more bodies will cause more weight, however I don't think it should considered to big of a problem
+
+
+
+The reason why a single body isn't going to work for blob foot
+-I get the net angle of the suction
+-I apply force
+-If there is a whole in the center, I have a problem
+
+What I can do alternatively is create a Prismatic joint
+however, that won't turn right as it will spread out like a star rather than like a point as we want it
+
+Its also possible I can have an internal ring around the main
+-this would work, however it may result in more problems
+
+I could also create a Wheel joint instead of distance joint for each
+-However, this makes no difference in that its the shocks that I want to apply pressure to, not the wheel
+
+I could look up the line joint 
+
+No matter the aspect, it looks like I'm running into an issue
